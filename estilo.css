@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.oculto {
+    display: none;
+}
+
+#contenedor {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#encabezado {
+    margin-bottom: 60px;
+}
+
+canvas {
+    background: black;
+}
+
+#tablero {
+    width: 615px;
+}

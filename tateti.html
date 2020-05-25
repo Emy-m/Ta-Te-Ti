@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ta-Te-Ti</title>
+        <script type="text/javascript" src="juego.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <h1>Tateti</h1>
+            </div>
+            <div id="tablero">
+                <canvas class="canvas" id="canvas00" height="150px" width="200px" onclick="jugada(0, 0)"></canvas>
+                <canvas class="canvas" id="canvas01" height="150px" width="200px" onclick="jugada(0, 1)"></canvas>
+                <canvas class="canvas" id="canvas02" height="150px" width="200px" onclick="jugada(0, 2)"></canvas>
+                <canvas class="canvas" id="canvas10" height="150px" width="200px" onclick="jugada(1, 0)"></canvas>
+                <canvas class="canvas" id="canvas11" height="150px" width="200px" onclick="jugada(1, 1)"></canvas>
+                <canvas class="canvas" id="canvas12" height="150px" width="200px" onclick="jugada(1, 2)"></canvas>
+                <canvas class="canvas" id="canvas20" height="150px" width="200px" onclick="jugada(2, 0)"></canvas>
+                <canvas class="canvas" id="canvas21" height="150px" width="200px" onclick="jugada(2, 1)"></canvas>
+                <canvas class="canvas" id="canvas22" height="150px" width="200px" onclick="jugada(2, 2)"></canvas>
+            </div>
+        </div>
+    </body>
+</html>

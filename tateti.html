@@ -2,25 +2,48 @@
 <html>
     <head>
         <title>Ta-Te-Ti</title>
-        <script type="text/javascript" src="juego.js"></script>
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
         <div id="contenedor">
             <div id="encabezado">
                 <h1>Tateti</h1>
+                <div id="inicio">
+                    <div class="ingreso">
+                        <p>Jugador 1:</p><input type="text" id="inputJugador1" autocomplete="off" required>
+                    </div>
+                    <div class="ingreso">
+                        <p>Jugador 2:</p><input type="text" id="inputJugador2" autocomplete="off" required>
+                    </div>
+                    <button onclick="empezar()">Empezar</button>
+                </div>
+                <div id="datos" class="oculto">
+                    <p id="partidas">Partidas:<span>0</span></p>
+                    <div id="jugador1">
+                        <p>Jugador 1 (cuadrado):<span></span></p>
+                        <p id="victorias1">Victorias:<span>0</span></p>
+                    </div>
+                    <div id="jugador2">
+                        <p>Jugador 2 (circulo):<span></span></p>
+                        <p id="victorias2">Victorias:<span>0</span></p>
+                    </div>
+                    <p id="turno">Turno:<span></span></p>
+                </div>
             </div>
-            <div id="tablero">
-                <canvas class="canvas" id="canvas00" height="150px" width="200px" onclick="jugada(0, 0)"></canvas>
-                <canvas class="canvas" id="canvas01" height="150px" width="200px" onclick="jugada(0, 1)"></canvas>
-                <canvas class="canvas" id="canvas02" height="150px" width="200px" onclick="jugada(0, 2)"></canvas>
-                <canvas class="canvas" id="canvas10" height="150px" width="200px" onclick="jugada(1, 0)"></canvas>
-                <canvas class="canvas" id="canvas11" height="150px" width="200px" onclick="jugada(1, 1)"></canvas>
-                <canvas class="canvas" id="canvas12" height="150px" width="200px" onclick="jugada(1, 2)"></canvas>
-                <canvas class="canvas" id="canvas20" height="150px" width="200px" onclick="jugada(2, 0)"></canvas>
-                <canvas class="canvas" id="canvas21" height="150px" width="200px" onclick="jugada(2, 1)"></canvas>
-                <canvas class="canvas" id="canvas22" height="150px" width="200px" onclick="jugada(2, 2)"></canvas>
+            <div id="tablero" class="oculto">
+                <canvas class="canvas" id="canvas00" height="150px" width="200px" onclick="jugarTurno(0, 0)"></canvas>
+                <canvas class="canvas" id="canvas01" height="150px" width="200px" onclick="jugarTurno(0, 1)"></canvas>
+                <canvas class="canvas" id="canvas02" height="150px" width="200px" onclick="jugarTurno(0, 2)"></canvas>
+                <canvas class="canvas" id="canvas10" height="150px" width="200px" onclick="jugarTurno(1, 0)"></canvas>
+                <canvas class="canvas" id="canvas11" height="150px" width="200px" onclick="jugarTurno(1, 1)"></canvas>
+                <canvas class="canvas" id="canvas12" height="150px" width="200px" onclick="jugarTurno(1, 2)"></canvas>
+                <canvas class="canvas" id="canvas20" height="150px" width="200px" onclick="jugarTurno(2, 0)"></canvas>
+                <canvas class="canvas" id="canvas21" height="150px" width="200px" onclick="jugarTurno(2, 1)"></canvas>
+                <canvas class="canvas" id="canvas22" height="150px" width="200px" onclick="jugarTurno(2, 2)"></canvas>
             </div>
+        </div>
+        <div id="script" class="oculto">
+            <script type="text/javascript" src="tateti.js"></script>
         </div>
     </body>
 </html>

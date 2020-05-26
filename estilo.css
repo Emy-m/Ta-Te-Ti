@@ -8,12 +8,18 @@
     display: none;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
 #contenedor {
+    margin: auto;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
+    max-width: 1000px;
 }
 
 #encabezado {
@@ -26,4 +32,26 @@ canvas {
 
 #tablero {
     width: 615px;
+}
+
+.ingreso {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.ingreso input{
+    margin-left: 5px;
+}
+
+#inicio {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#datos div {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
